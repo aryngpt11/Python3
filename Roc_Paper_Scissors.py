@@ -26,8 +26,12 @@ Scissors='''
       (____)
 ---.__(___)
 '''
+game=[Rock,Paper,Scissors]
 user_choice=int(input("Enter the no 0 for rock,1 for scissors,2 for paper: "))
-if user_choice==0:
+print("your choice:" ,game[user_choice])
+
+
+'''if user_choice==0:
     print(Rock)
 elif user_choice==1:
     print(Scissors)
@@ -35,14 +39,18 @@ elif user_choice==2:
     print(Paper)
 else:
     print("Type a valid no")
+    2nd method'''
 Comp_choice=random.randint(0,2)
-print(f"Computer choose {Comp_choice}")
+print("Computer Choice:",game[Comp_choice])
+
+
+'''print(f"Computer choose {Comp_choice}")
 if Comp_choice==0:
     print(Rock)
 elif Comp_choice==1:
     print(Scissors)
 else:
-    print(Paper)
+    print(Paper)'''
 
 if user_choice==1 & Comp_choice==2:
     print("You Wins!")
