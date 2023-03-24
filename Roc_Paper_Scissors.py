@@ -28,7 +28,10 @@ Scissors='''
 '''
 game=[Rock,Paper,Scissors]
 user_choice=int(input("Enter the no 0 for rock,1 for scissors,2 for paper: "))
-print("your choice:" ,game[user_choice])
+if user_choice>2:
+    print("Invalid no")
+else:
+    print("your choice:" ,game[user_choice])
 
 
 '''if user_choice==0:
